@@ -1,0 +1,78 @@
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137711072-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-137711072-1');
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+		#d1{
+		  width:100%;
+		  height:100%;
+		  background-image:url('https://s3.amazonaws.com/aristaticfiles/SOHINA+SIDHU.jpg');
+		  background-position: center 12%;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+
+		#d2{
+		  width:100%;
+		  height:100%;
+		}
+
+		#d3{
+		  position: absolute;
+		  top:-10;
+		  left:-100;
+		  height: 40%;
+		}
+
+		img {
+		    max-height: 100%;
+		    height:auto;
+		}
+
+	</style>
+</head>
+
+<body style="text-align:center;font-family:'Amatic SC', sans-serif;margin:0;">
+<div id="d1">
+	<span style="position:absolute;top:30;left:60;font-size:5.5em;color:white;text-align:left;">SOHINA<br>SIDHU</span>
+	<span style="font-size:1em;color:white;position:absolute;bottom:0;right:0;">© David Noles Photography&nbsp;&nbsp;&nbsp;</span>
+</div>
+<div id="d2">
+	<br>
+	<p style="text-align:center;font-size:2em;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sohinasidhu@gmail.com
+	</p>
+	<div id = "d3">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://s3.amazonaws.com/aristaticfiles/ss_logo.png">
+	</div>
+</div>
+</body>
+
+
+<script>
+	$("#d2").hide();
+	document.getElementById('d1').onclick = function(){showcontact();}
+	document.getElementById('d2').onclick = function(){showpicture();}
+
+	function showcontact() {
+		$("#d1").hide();
+		$("#d2").show();
+	}
+
+	function showpicture() {
+		$("#d2").hide();
+		$("#d1").show();
+	}
+
+</script>

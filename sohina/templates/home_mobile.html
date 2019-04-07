@@ -1,0 +1,118 @@
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137711072-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-137711072-1');
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+		#main{
+		  position:absolute;
+		  width:95%;
+		  height:auto;
+		}
+		#main > div{
+		  display:inline-block;
+		  vertical-align: center;
+		}
+
+		#d1{
+		  width:100%;
+		  height:auto;
+		}
+
+		#d2{
+		  height:10%;
+		}
+
+		#d3 {
+		  width:80%;
+		  height:auto;
+		  margin-left:5%;
+		}
+
+		#d4 {
+		  height:5%;
+		}
+		
+		#d5 {
+		  width:100%;
+		  height:auto;
+		}
+
+		#d1 > div {
+			display:inline-block;
+			vertical-align:middle;
+		}
+
+		#subd1 {
+			width: 95%;
+			height:auto;
+			cursor:pointer;
+			margin-left:5%;
+		}
+		#subd2 {
+			width: 50%;
+			height:auto;
+
+		}
+
+		img {
+		    max-width: 100%;
+		    height:auto;
+		}
+
+	</style>
+</head>
+
+<body style="text-align:center;font-family:'Amatic SC', cursive;">
+
+<div id="main">
+	<div id="d1">
+		<div id="subd1">
+			<img src=https://s3.amazonaws.com/aristaticfiles/SohinaNameLogo.png>
+		</div>
+		<div id="subd2">
+			<h1 id='contact-button' style="cursor:pointer;font-size:2.5em">&nbsp;&nbsp;&nbsp;&nbsp;contact</h1>
+		</div>
+	</div>
+	<div id="d2"></div>
+	<div id = "d3">
+		<img src="https://s3.amazonaws.com/aristaticfiles/SOHINA+SIDHU.jpg">
+		<p style="text-align:right;font-size:1.5em;">© David Noles Photography</p>
+	</div>
+	<div id="d4"></div>
+	<div id="d5">
+		<h2 style="text-align: center;font-size:3.5em">&nbsp;&nbsp;&nbsp;&nbsp;sohinasidhu@gmail.com</h2>
+	</div>
+</div>
+</body>
+
+<script>
+	$("#d4").hide();
+	$("#d5").hide();
+	document.getElementById('contact-button').onclick = function(){showcontact();}
+	document.getElementById('subd1').onclick = function(){showpicture();}
+
+	function showcontact() {
+		$("#d3").hide();
+		$("#d2").hide();
+		$("#d4").show();
+		$("#d5").show();
+	}
+
+	function showpicture() {
+		$("#d4").hide();
+		$("#d5").hide();
+		$("#d3").show();
+		$("#d2").show();
+	}
+</script>
+
