@@ -9,11 +9,11 @@ import time
 def home(request):
 	user_agent = get_user_agent(request)
 	if user_agent.is_mobile:
-		return render(request, "home_mobile_2.html")
+		return render(request, "home_mobile.html")
 	elif user_agent.is_tablet:
-		return render(request, "home_mobile_2.html")
+		return render(request, "home_mobile.html")
 	else:
-		return render(request, "home_pc_2.html")
+		return render(request, "home_pc.html")
 
 def dev_mobile(request):
 	user_agent = get_user_agent(request)
